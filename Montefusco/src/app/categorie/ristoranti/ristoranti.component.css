@@ -1,0 +1,83 @@
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .card {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 20%;
+    height: auto;
+  }
+  
+  .toolbar-button {
+    background: transparent; /* Rimuove lo sfondo */
+    border: none; /* Rimuove il bordo */
+    color: #ffffff; /* Colore dell'icona, puoi modificarlo come desiderato */
+    padding: 0; /* Rimuove la spaziatura interna */
+    min-width: auto; /* Rimuove la larghezza minima predefinita del pulsante */
+    box-shadow: none; /* Rimuove eventuali ombre */
+  }
+  
+  /* Stile per i pulsanti del carosello */
+  .carousel-button {
+    background-color: rgba(0, 0, 0, 0.5); /* Colore di sfondo trasparente */
+    color: #ffffff; /* Colore del testo o icona */
+    border: none; /* Rimuove il bordo */
+    border-radius: 50%; /* Forma del pulsante */
+    padding: 10px; /* Spaziatura interna */
+    cursor: pointer; /* Mostra il cursore a mano */
+    position: absolute; /* Posizionamento assoluto */
+    top: 50%; /* Posizione verticale centrale */
+    transform: translateY(-50%); /* Centratura verticale */
+  }
+  
+  /* Pulsante precedente */
+  .carousel-button.prev {
+    left: 10px; /* Posizione a sinistra */
+  }
+  
+  /* Pulsante successivo */
+  .carousel-button.next {
+    right: 10px; /* Posizione a destra */
+  }
+  
+/* Stile per la toolbar */
+.custom-toolbar {
+    background: #3f51b5; /* Colore di sfondo della toolbar */
+    color: white; /* Colore del testo */
+    padding: 0 16px; /* Spaziatura interna */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Ombra della toolbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Stile per il pulsante della toolbar */
+  .toolbar-button {
+    background: transparent; /* Rimuove lo sfondo */
+    border: none; /* Rimuove il bordo */
+    color: white; /* Colore dell'icona e del testo */
+    padding: 8px; /* Spaziatura interna */
+    font-size: 16px; /* Dimensione del testo */
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Transizione per l'effetto hover */
+  }
+    /* Stile per il testo del pulsante */
+  .button-text {
+    margin-left: 8px; /* Spazio tra l'icona e il testo */
+  }
+  

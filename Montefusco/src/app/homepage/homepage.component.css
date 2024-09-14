@@ -1,0 +1,101 @@
+/* Contenitore principale */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  /* Sezione superiore: immagine centrata */
+  .top-section {
+    flex-grow: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .centered-image {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Sezione centrale: testo centrato */
+  .middle-section {
+    flex-grow: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+  
+  }
+  
+  .middle-section h1 {
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  /* Sezione inferiore: pulsante */
+  .bottom-section {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+
+  img[src="assets/landscape.jpeg"] {
+    position: fixed; /* Fissa l'immagine in modo che non scorra con il contenuto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Rende l'immagine di sfondo che copre tutto l'elemento */
+    opacity: 0.4; /* Imposta l'opacità per rendere l'immagine semi-trasparente */
+    z-index: -1; /* Posiziona l'immagine dietro tutti gli altri contenuti */
+  }
+
+  /* Triangolo verde nell'angolo in alto a destra */
+.triangle-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 150px solid rgba(34, 139, 34, 0.7); /* Verde con trasparenza */
+  border-left: 150px solid transparent; /* Triangolo verso il basso */
+  z-index: -1; /* Posiziona dietro il contenuto */
+}
+
+/* Triangolo verde nell'angolo in basso a sinistra */
+.triangle-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 150px solid rgba(34, 139, 34, 0.7); /* Verde con trasparenza */
+  border-right: 150px solid transparent; /* Triangolo verso l'alto */
+  z-index: -1; /* Posiziona dietro il contenuto */
+}
+
+
+.cormorant-garamond-bold {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  font-style: normal;
+}
