@@ -1,0 +1,96 @@
+/* Contenitore principale */
+.background-container {
+  position: relative;
+  width: 100vw; /* Occupa l'intera larghezza della viewport */
+  height: 100vh; /* Occupa l'intera altezza della viewport */
+  overflow: hidden; /* Impedisce lo scroll */
+}
+
+/* Immagine di sfondo */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Contenitore per ogni pulsante */
+.example-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+/* Pulsanti */
+button[mat-fab] {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+mat-icon {
+  margin-right: 10px;
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 600px) {
+  button[mat-fab] {
+    max-width: 90%;
+    font-size: 1.2em;
+  }
+
+  .example-button-container {
+    margin: 20px 0;
+  }
+}
+
+/* Toolbar trasparente */
+.transparent-toolbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  box-shadow: none;
+  position: relative;
+  z-index: 1;
+}
+
+/* Stile del testo "Categorie" */
+.toolbar-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Triangoli colorati */
+.triangle-bottom-left, .triangle-top-right {
+  position: absolute;
+  z-index: 2;
+}
+
+.triangle-bottom-left {
+  bottom: 10px;
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-bottom: 50px solid rgba(0, 255, 0, 0.5);
+}
+
+.triangle-top-right {
+  top: 10px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid rgba(0, 255, 0, 0.5);
+}
